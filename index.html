@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" ng-app="tipCalcApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tip Calculator App</title>
+
+    <!-- Requir jQuery Library-->
+    <script src="js/jquery-2.2.0.min.js"></script>
+
+    <!-- Require Angular.js Libraries -->
+    <script src="js/angular/angular/angular.js"></script>
+    <script src="js/angular/angular-animate/angular-animate.min.js"></script>
+    <script src="js/angular/angular-aria/angular-aria.min.js"></script>
+    <script src="js/angular/angular-messages/angular-messages.min.js"></script>
+    <script src="js/angular/angular-route/angular-route.js"></script>
+
+    <!-- Require Bootstrap Library-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- Small Window/Mobile Menu -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">TipCalcApp</a>
+                </div>
+
+                <!-- Left-side Navigation -->
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+
+                        <!-- Links -->
+                        <li class="active"><a href="#/home">Main <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#/java">Java <span class="sr-only"></span></a></li>
+                    </ul>
+
+                    <!-- Right-side Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Theme Selection -->
+                        <li class="dropdown">
+                            <a ng-href="##" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Theme<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" id="bootstrapcdn-themes">
+                                <li><a class="theme-links" ng-href="##">Default</a></li>
+                                <li class="divider"></li>
+                                <li><a class="theme-links" ng-href="##">Cerulean</a></li>
+                                <li><a class="theme-links" ng-href="##">Cosmo</a></li>
+                                <li><a class="theme-links" ng-href="##">Cyborg</a></li>
+                                <li><a class="theme-links" ng-href="##">Darkly</a></li>
+                                <li><a class="theme-links" ng-href="##">Flatly</a></li>
+                                <li><a class="theme-links" ng-href="##">Journal</a></li>
+                                <li><a class="theme-links" ng-href="##">Lumen</a></li>
+                                <li><a class="theme-links" ng-href="##">Paper</a></li>
+                                <li><a class="theme-links" ng-href="##">Readable</a></li>
+                                <li><a class="theme-links" ng-href="##">Sandstone</a></li>
+                                <li><a class="theme-links" ng-href="##">Simplex</a></li>
+                                <li><a class="theme-links" ng-href="##">Slate</a></li>
+                                <li><a class="theme-links" ng-href="##">Spacelab</a></li>
+                                <li><a class="theme-links" ng-href="##">Superhero</a></li>
+                                <li><a class="theme-links" ng-href="##">United</a></li>
+                                <li><a class="theme-links" ng-href="##">Yeti</a></li>
+                            </ul>
+                        </ul>
+                        <!-- Search Bar -->
+                        <form class="navbar-form navbar-right" role="search" id="page-search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" id="page-search-input">
+                            </div>
+                            <button type="submit" class="btn btn-default disabled" id="page-search-submit">Go</button>
+                        </form>
+                    </div> <!-- .collapse navbar-collapse -->
+                </div> <!-- .container-fluid -->
+            </nav>
+        </header>
+
+        <!-- Notes Sidebar Application -->
+        <div class="jumbotron" id="notes-display">
+            <h2>Application Notes</h2>
+            <h5>Click on a note to delete it.</h5>
+            <form class="navbar-form" role="search" id="notes-form">
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm" placeholder="Type your notes here" id="input-notes">
+                    <button type="submit" class="btn btn-success btn-sm" id="note-submit">Add</button>
+                </div>
+            </form>
+            <p id="notes"></p>
+        </div>
+
+        <!-- Views -->
+        <main ng-view></main>
+
+        <!-- Footer -->
+        <footer>
+            <hr>
+            <h6 style="padding-left: 1%;">
+                Made by Omie Walls&copy;. Contact me at <a href="mailto:orwalls@uwm.edu">orwalls@uwm.edu</a>.
+                <br> View more code at <a href="http://omiewalls.com">OmieWalls.com</a>
+                <br> 'Cosmo' Theme by <a href="http://bootswatch.com/cosmo/">Bootswatch</a>.
+                <br> Based on <a href="http://getbootstrap.com/">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>.
+            </h6>
+        </footer>
+        <!-- BootstrapCDN Framework (Cosmo Theme) -->
+        <link id="bootstrapcdn-link" href="http://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
+    </body>
+
+    </html>
