@@ -1,0 +1,67 @@
+<!-- Welcome Header -->
+<h1>Welcome to the TestCalcApp!</h1>
+
+<!-- App Description -->
+<p class="lead">Calculate the tip amount and bill total from the bill amount and tip percentage!</p>
+
+<!-- Student Info Panel -->
+<div class="panel panel-default" id="student-info-panel">
+    <div class="panel-heading">
+        Student Name:
+        <br> Omie Walls
+    </div>
+    <div class="panel-body">
+        Student No.:
+        <br> 99-1217982-80
+
+    </div> <!-- .panel-body -->
+</div> <!-- #student-info-panel -->
+
+<!-- Tip Calculator App -->
+<form class="form-horizontal" id="tip-calc-form">
+    <fieldset>
+        <legend>Tip Calculator</legend>
+        <!-- Bill Amount Input -->
+        <div class="form-group">
+            <label for="input-bill" class="col-lg-2 control-label">Bill Amount</label>
+            <div class="col-lg-10">
+                <input type="number" class="form-control" id="input-bill" placeholder="Bill Amount" step="0.01" min="1" required>
+            </div> <!-- .col-lg-10 -->
+        </div> <!-- .form-group -->
+
+        <!-- Tip Percent Input -->
+        <div class="form-group">
+            <label for="input-tip" class="col-lg-2 control-label">Tip Percent</label>
+            <div class="col-lg-10">
+                <input type="number" class="form-control" id="input-tip" placeholder="Tip Percentage" step="0.01" min="0" max="1" required>
+            </div> <!-- .col-lg-10 -->
+        </div> <!-- .form-group -->
+
+        <!-- Reset/Submit Buttons -->
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary" id="calc-submit">Submit</button>
+            </div> <!-- .col-lg-10 col-lg-offset-2 -->
+        </div> <!-- .form-group -->
+    </fieldset>
+
+    <!-- Results -->
+    <fieldset id="results">
+        <legend>Results</legend>
+        <!-- Tip Amount Output -->
+        <div class="form-group">
+            <label id="tip-amount" class="col-lg-2 control-label">Tip Amount</label>
+            <div class="col-lg-10">
+                <div class="well" id="output-tip">${{tipOutput}}</div>
+            </div> <!-- .col-lg-10 -->
+        </div> <!-- .form-group -->
+
+        <div class="form-group">
+            <label id="total-amount" class="col-lg-2 control-label">Total Amount</label>
+            <div class="col-lg-10">
+                <div class="well" id="output-total">${{totalOutput}}</div>
+            </div> <!-- .col-lg-10 -->
+        </div> <!-- .form-group -->
+    </fieldset>
+</form>
