@@ -1,0 +1,66 @@
+main {
+    padding: 5%;
+}
+fieldset {
+    width: 40%;
+}
+iframe {
+    width: 65%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.panel-heading, .panel-body {
+    padding: 2%;
+    height: auto;
+}
+.panel-body {
+    height: 50px;
+}
+
+.note-delete-btn {
+    float: right;
+}
+
+#student-info-panel {
+    width: 25%;
+}
+
+#form-results {
+    float: left;
+    margin-top: 2%;
+    width: 57%;
+    padding: 0%;
+}
+#tip-amount span {
+    text-align: right;
+    margin-left: 45%;
+    width: auto;
+}
+#total-amount span {
+    text-align: right;
+    margin-left: 38%;
+    width: auto;
+}
+
+#notes-display {
+    width: 30%;
+    height: 575px;
+    margin-right: 5%;
+    margin-top: 10%;
+    padding: 2%;
+    float: right;
+}
+#notes-display h2 {
+    text-align: center;
+}
+#input-notes {
+    width: 76.5%;
+}
+#note-submit {
+    float: right;
+}
+
+#java-tabs {
+    height: 40px;
+}
